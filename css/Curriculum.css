@@ -1,0 +1,197 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.1)), url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+    font-family: algerian;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container-header {
+    background: linear-gradient(90deg, rgba(10,3,42,1) 0%, rgba(2,0,36,1) 35%, rgba(9,9,121,1) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-header header .logo a {
+    font-family: algerian;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a {
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover {
+    color: #10b2e3;
+}
+section {
+    margin-top: 80px;
+}
+.curriculum {
+    color: #fff;
+    padding: 50px 20px;
+}
+.curriculum .container-section {
+    max-width: 1100px;
+    margin: auto;
+}
+.curriculum h2 {
+    text-align: center;
+    font-size: 48px;
+    padding: 20px 0;
+}
+.curriculum .fila {
+    display: flex;
+}
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+.curriculum .fila .col h3 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.curriculum .fila .izquierda {
+    border-right: solid #d5d1d1;
+}
+.curriculum .fila .derecha {
+    border-left: solid #bcb4b4;
+}
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #252525;
+    position: relative;
+}
+.curriculum .fila .item h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item .casa {
+    color: #1cb698;
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+.curriculum .fila .item .fecha {
+    display: block;
+    color: #1cb698;
+    margin-bottom: 10px;
+}
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+.curriculum .fila .izq {
+    border-right: 2px solid #1cb698;
+}
+.curriculum .fila .der {
+    border-left: 2px solid #1cb698;
+}
+.curriculum .fila .item .conectori {
+    height: 2px;
+    background-color: #fff;
+    width: 47px;
+    position: absolute;
+    top: 50px;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    margin: 0 auto;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item .conectord {
+    height: 2px;
+    background-color: #fff;
+    width: 47px;
+    position: absolute;
+    top: 50px;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod {
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #1cb698;
+    margin: 0 auto;
+    position: relative;
+    bottom: 4px;
+}
+.curriculum .fila .item:last-child .conectori,
+.curriculum .fila .item:last-child .conectord {
+    display: none;
+}
+.curriculum .fila .item .descripcion {
+    margin-top: 15px;
+    line-height: 24px;
+}
+@media (max-width: 768px) {
+    /* header */
+    .container-header {
+        padding: 10px;
+    }
+    .container-header header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container-header header .logo a {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    /* section curriculum */
+    .curriculum .fila {
+        flex-direction: column;
+    }
+    .curriculum .fila .col {
+        width: 100%;
+        margin-bottom: 30px;
+        border: none;
+    }
+    .curriculum .fila .col:last-child {
+        margin-bottom: 0;
+    }
+    .curriculum .fila .izquierda .item .conectori,
+    .curriculum .fila .derecha .item .conectord {
+        display: none;
+    }
+}

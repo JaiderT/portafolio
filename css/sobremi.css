@@ -1,0 +1,201 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600; 800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,.1)), url(../img/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+* {
+    box-sizing: border-box;
+    font-family: algerian;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container-header {
+    background: linear-gradient(90deg, rgba(10,3,42,1) 0%, rgba(2,0,36,1) 35%, rgba(9,9,121,1) 100%);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.container-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.container-header header .logo a {
+    font-family: algerian;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.container-header header ul {
+    display: flex;
+    list-style: none;
+}
+.container-header header nav ul li a {
+    text-align: center;
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.container-header header nav ul li a:hover {
+    color: #10b2e3;
+}
+.sobre-mi {
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.sobre-mi .container-section {
+    max-width: 1100px;
+    margin: auto;
+}
+.sobre-mi h2 {
+    font-size: 48px;
+    font-family: algerian;
+    text-align: center;
+    padding: 20px 0;
+}
+.sobre-mi .container-section p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+.sobre-mi .container-section p span {
+    color: #00fbff;
+    font-weight: bold;
+}
+.sobre-mi .fila {
+    display: flex;
+}
+.sobre-mi .fila .col {
+    width: 50%;
+}
+.sobre-mi .fila .col h3 {
+    font-size: 28px;
+    font-family: algerian;
+    margin-bottom: 25px;
+}
+.sobre-mi .fila .col ul {
+    list-style: none;
+}
+.sobre-mi .fila .col ul li {
+    margin: 12px 0;
+}
+.sobre-mi .fila .col ul strong {
+    display: inline-block;
+    color: #00ffcc;
+    width: 100px;
+    gap: 10px;
+    text-align: right;
+}
+.sobre-mi .fila .col .container-intereses {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: center;
+}
+.sobre-mi .fila .col .container-intereses .interes {
+    width: 120px;
+    height: 100px;
+    background-color: rgba(171, 165, 165);
+    border-radius: 20px;
+    margin: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.sobre-mi .fila .col .container-intereses .interes:hover {
+    background-color: #1cb698;
+}
+footer {
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+}
+footer .redes {
+    margin-bottom: 20px;
+}
+footer .redes a {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+}
+footer .redes a:hover {
+    background: #1cb698;
+    border-color: #1cb698;
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    /* header */
+    .container-header header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .container-header header .logo a {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    /* section sobre-mi */
+    .sobre-mi .fila {
+        flex-direction: column;
+    }
+    .sobre-mi .fila .col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sobre-mi .fila .col:last-child {
+        margin-bottom: 0;
+    }
+    .sobre-mi .fila .col .container-intereses {
+        justify-content: center;
+    }
+    .sobre-mi .fila .col .container-intereses .interes {
+        margin: 0 10px 10px 0;
+    }
+    .sobre-mi .fila .col .container-intereses .interes:last-child {
+        margin-right: 0;
+    }
+    footer .redes a {
+        margin: 5px;
+    }
+}
