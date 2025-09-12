@@ -53,6 +53,17 @@ body {
 .container-header header nav ul li a:hover {
     color: #1cb698;
 }
+#menu-toggle {
+    display: none;
+}
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #00ffcc;
+    margin-left: auto;
+    border-radius: 20px;
+}
 /* section inicio */
 .inicio {
     height: 100vh;
@@ -149,54 +160,6 @@ footer .arriba {
     border-radius: 50%;
     line-height: 50px;
     font-size: 18px;
-}
-/* responsive */
-@media (max-width: 768px) {
-    /* header */
-    .container-header header {
-        flex-direction: column;
-        padding: 10px;
-    }
-    .container-header header .logo a {
-        font-size: 25px;
-        margin-bottom: 10px;
-    }
-    /* section inicio */
-    .inicio .container-banner {
-        max-width: 90%;
-        padding: 15px;
-    }
-    .inicio .container-banner h1 {
-        font-size: 24px;
-        margin-top: 20px;
-    }
-    .inicio .container-banner h2 {
-        font-size: 18px;
-    }
-    .container-banner .container-img img {
-        width: 50%;
-        margin-top: 20px;
-        border: 7px solid #f1f5f4;
-    }
-    .container-banner .redes a {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
-        margin: 10px;
-    }
-    footer .redes a {
-        width: 36px;
-        height: 36px;
-        font-size: 16px;
-        margin: 10px;
-    }
-    footer .arriba {
-        width: 40px;
-        height: 50px;
-        line-height: 40px;
-        font-size: 16px;
-        top: -20px;
-    }
 }
 @media (max-width: 768px) {
     #menu-toggle {
