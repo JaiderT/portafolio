@@ -63,14 +63,15 @@ html {
     display: none;
     font-size: 24px;
     cursor: pointer;
-    color: #00ffcc;
+    color: #000000;
     margin-left: auto;
     border-radius: 20px;
 }
 .sobre-mi {
+    background-color: #0000007b;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 100px 20px;
     text-align: center;
     min-height: 100vh;
@@ -93,7 +94,7 @@ html {
     margin-bottom: 20px;
 }
 .sobre-mi .container-section p span {
-    color: #00fbff;
+    color: #169df6;
     font-weight: bold;
 }
 .sobre-mi .fila {
@@ -115,7 +116,7 @@ html {
 }
 .sobre-mi .fila .col ul strong {
     display: inline-block;
-    color: #00ffcc;
+    color: #169df6;
     width: 100px;
     gap: 10px;
     text-align: right;
@@ -218,7 +219,7 @@ footer .redes a:hover {
         display: block;
         font-size: 28px;
         cursor: pointer;
-        color: #00ffcc;
+        color: #000000;
         position: absolute;
         right: 20px;
         top: 20px;
@@ -228,7 +229,7 @@ footer .redes a:hover {
     .container-header header .nav ul {
         display: none;
         flex-direction: column;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.874);
         position: absolute;
         top: 60px;
         right: 20px;

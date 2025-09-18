@@ -128,6 +128,7 @@ body {
 footer {
     background-color: black;
     color: #fff;
+    padding: 14px 0;
     text-align: center;
     position: relative;
     width: 100%;
@@ -169,7 +170,7 @@ footer .arriba {
         display: block;
         font-size: 28px;
         cursor: pointer;
-        color: #00ffcc;
+        color: #000000;
         position: absolute;
         right: 20px;
         top: 20px;
@@ -179,7 +180,7 @@ footer .arriba {
     .container-header header .nav ul {
         display: none;
         flex-direction: column;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.874);
         position: absolute;
         top: 60px;
         right: 20px;
@@ -201,5 +202,24 @@ footer .arriba {
         padding: 10px 15px;
         display: block;
         text-align: left;
+    }
+}
+@media (max-width: 768px) {
+    .container-header header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-header header ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .container-header header nav ul li {
+        margin: 10px 0;
+    }
+    footer .redes a {
+        margin: 10px;
+        gap: 15px;
     }
 }

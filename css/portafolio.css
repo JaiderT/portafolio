@@ -186,7 +186,7 @@ footer .redes a:hover {
         display: block;
         font-size: 28px;
         cursor: pointer;
-        color: #00ffcc;
+        color: #000000;
         position: absolute;
         right: 20px;
         top: 20px;
@@ -196,7 +196,7 @@ footer .redes a:hover {
     .container-header header .nav ul {
         display: none;
         flex-direction: column;
-        background-color: rgba(0,0,0,0.5);
+        background-color: rgba(0, 0, 0, 0.874);
         position: absolute;
         top: 60px;
         right: 20px;

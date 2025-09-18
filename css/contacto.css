@@ -1,5 +1,6 @@
-@import 
-url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+/* ------------------- ESTILOS BASE ------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
+
 body {
     margin: 0;
     padding: 0;
@@ -10,15 +11,19 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
 * {
     box-sizing: border-box;
     font-family: algerian;
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
+/* ------------------- HEADER ------------------- */
 .container-header {
     background: linear-gradient(90deg, rgba(10,3,42,1) 0%, rgba(2,0,36,1) 35%, rgba(9,9,121,1) 100%);
     position: fixed;
@@ -36,7 +41,6 @@ html {
     padding: 15px 20px;
 }
 .container-header header .logo a {
-    font-family: algerian;
     font-size: 25px;
     color: #ffffff;
     text-decoration: none;
@@ -56,14 +60,11 @@ html {
 .container-header header nav ul li a:hover {
     color: #10b2e3;
 }
-section {
-    margin-top: 80px; 
-}
 
+/* Toggle menu */
 #menu-toggle {
   display: none;
 }
-
 .menu-icon {
   display: none;
   font-size: 24px;
@@ -73,28 +74,26 @@ section {
   border-radius: 20px;
 }
 
-#contacto {
-    flex: 1;   
+/* ------------------- CONTACTO ------------------- */
+section {
+    margin-top: 80px; 
 }
-
 .contacto {
   padding: 60px 20px;
   color: #fff;
   text-align: center;
 }
-
 .contacto h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   color: #00b894;
 }
-
 .contacto p {
   margin-bottom: 30px;
   color: #ccc;
 }
 
-/* Contenedor de formulario + mapa */
+/* formulario + mapa */
 .contacto-contenido {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -113,7 +112,6 @@ section {
   padding: 20px;
   border-radius: 10px;
 }
-
 .contacto input,
 .contacto textarea {
   padding: 12px;
@@ -122,12 +120,10 @@ section {
   outline: none;
   font-size: 1rem;
 }
-
 .contacto textarea {
   min-height: 120px;
   resize: none;
 }
-
 .contacto button {
   background: #00b894;
   color: #fff;
@@ -139,7 +135,6 @@ section {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 .contacto button:hover {
   background: #009874;
 }
@@ -150,12 +145,13 @@ section {
   overflow: hidden;
   min-height: 350px;
   box-shadow: 0 10px 15px rgba(229, 215, 215, 0.4);
- 
 }
 .mapa iframe {
   width: 100%;
   height: 100%;
 }
+
+/* ------------------- FOOTER ------------------- */
 footer {
     background-color: black;
     color: #fff;
@@ -184,45 +180,86 @@ footer .redes a:hover {
     border-color: #1cb698;
     transform: scale(1.1);
 }
+/* responsive */
 @media (max-width: 768px) {
-    #menu-toggle {
-        display: none;
-    }
-    .menu-icon {
-        display: block;
-        font-size: 28px;
-        cursor: pointer;
-        color: #00ffcc;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-        z-index: 300;
-    }
-    /*menu oculto */
-    .container-header header .nav ul {
-        display: none;
-        flex-direction: column;
-        background-color: rgba(0,0,0,0.5);
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-        padding: 10px 0;
-        border-radius: 6px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.4);
-        z-index: 250;
-    }
-    /*mostrar menu al activar */
-    #menu-toggle:checked ~ .nav ul {
-        display: flex;
-    } 
-    .container-header header .nav ul li {
-        margin: 5px 0;
-    }
-    .container-header header .nav ul li a {
-        color: #fff;
-        padding: 10px 15px;
-        display: block;
-        text-align: left;
-    }
+  /* header */
+ #menu-toggle {
+    display: none;
+  }
+  .menu-icon {
+      display: block;
+      font-size: 28px;
+        color: #000000;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      z-index: 300;
+  }
+  .container-header header .nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.874);
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      padding: 10px 0;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      z-index: 250;
+  }
+  #menu-toggle:checked ~ .nav ul {
+      display: flex;
+  } 
+  .container-header header .nav ul li {
+      margin: 5px 0;
+  }
+  .container-header header .nav ul li a {
+      color: #fff;
+      padding: 10px 15px;
+      display: block;
+      text-align: left;
+  }
+    .contacto-contenido {
+    grid-template-columns: 1fr; /* formulario arriba, mapa abajo */
+  }
+
+  /* contacto */
+  .contacto {
+    padding: 60px 15px;
+  }
+  .contacto h2 {
+    font-size: 2rem;
+  }
+  .contacto p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+  .mapa {
+    min-height: 250px;
+  }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+  .container-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacto h2 {
+    font-size: 1.6rem;
+  }
+  .contacto p {
+    font-size: 0.9rem;
+  }
+  .contacto form {
+    padding: 15px;
+  }
+  .contacto input,
+  .contacto textarea {
+    font-size: 0.9rem;
+  }
+  .contacto button {
+    font-size: 0.9rem;
+  }
 }
