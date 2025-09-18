@@ -66,6 +66,8 @@ body {
 }
 /* section inicio */
 .inicio {
+    background-color: #0000007b;
+    background-size: cover;
     height: 100vh;
     color: #fff;
     display: flex;
