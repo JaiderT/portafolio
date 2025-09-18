@@ -252,3 +252,67 @@ footer .redes a:hover {
         text-align: center;
     }
 }
+@media (max-width: 768px) {
+    .container-header header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-header header ul {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .container-header header nav ul li {
+        margin: 10px 0;
+    }
+    .sobre-mi {
+        padding: 80px 15px;
+    }
+    .sobre-mi h2 {
+        font-size: 36px;
+    }
+    .sobre-mi .fila {
+        flex-direction: column;
+    }
+    .sobre-mi .fila .col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .sobre-mi .fila .col h3 {
+        font-size: 24px;
+    }
+    .sobre-mi .fila .col ul strong {
+        width: auto;
+        text-align: left;
+    }
+    .sobre-mi .fila .col .container-intereses {
+        justify-content: center;
+    }
+    .sobre-mi .fila .col .container-intereses .interes {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+    }
+    footer .redes a {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 480px) {
+    .container-header header .logo a {
+        font-size: 28px;
+    }
+    .sobre-mi h2 {
+        font-size: 28px;
+    }
+    .sobre-mi .container-section p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .sobre-mi .fila .col h3 {
+        font-size: 20px;
+    }
+}
